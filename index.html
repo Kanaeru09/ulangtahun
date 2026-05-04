@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Sayang ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(to bottom, #ffd6ec, #ffe9f5);
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      margin-top: 50px;
+      color: #ff4da6;
+      font-size: 3em;
+      animation: bounce 1s infinite alternate;
+    }
+
+    p {
+      font-size: 20px;
+      color: #444;
+      padding: 0 20px;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 20px;
+      background-color: #ff4da6;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff1a8c;
+      transform: scale(1.1);
+    }
+
+    .sticker {
+      position: absolute;
+      width: 80px;
+      animation: float 6s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-30px); }
+      100% { transform: translateY(0px); }
+    }
+
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-15px); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 Happy Birthday Sayang! 🎂</h1>
+
+  <p>
+    Hari ini hari spesial kamu 💖<br>
+    Semoga kamu selalu senang ya sama aku 😆💕<br><br>
+    Aku bersyukur banget punya kamu 🥰
+  </p>
+
+  <button onclick="playMusic()">Klik untuk mulai 🎶</button>
+
+  <!-- Musik -->
+  <audio id="music" loop>
+    <source src="kasih-putih.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Stiker lucu -->
+  <img src="https://cdn-icons-png.flaticon.com/512/742/742751.png" class="sticker" style="top:10%; left:10%;">
+  <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" class="sticker" style="top:70%; left:20%;">
+  <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" class="sticker" style="top:30%; left:80%;">
+  <img src="https://cdn-icons-png.flaticon.com/512/742/742888.png" class="sticker" style="top:80%; left:70%;">
+
+  <script>
+    function playMusic() {
+      document.getElementById("music").play();
+    }
+  </script>
+
+</body>
+</html>
